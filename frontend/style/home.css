@@ -12,3 +12,9 @@ body{
     background-color: rgb(161, 69, 247);
     color: whitesmoke;
 }
+#reader-area{
+    border: 2px solid #f36060;
+    padding: 25px;
+    height: auto;
+    border-radius: 5px;
+}
