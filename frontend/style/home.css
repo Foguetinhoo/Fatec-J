@@ -1,0 +1,14 @@
+body{
+   
+}
+#pdf-input{
+    display: none;
+     /* font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto; */
+}
+#label-input{
+    cursor: pointer;
+    display: block;
+    background-color: rgb(161, 69, 247);
+    color: whitesmoke;
+}
