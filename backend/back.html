@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link src="bg.js">
+    <title>Leitor com Marcador Mágico</title>
 </head>
 <body>
     <h1>Testando algumas coisas</h1>
-    <script>
-        <input type="file" id="pdf-reader" accept=".pdf">
-        
+    
+    <input type="file" id="pdf-input" accept=".pdf">
+    <button id="debug-button">Ver Gaveta Mágica</button>
 
-        <div id="reader-area">
-            <p>Aqui ficaria o Texto.</p>
+    <div id="readerarea">
+        <p>Aqui ficaria o Texto.</p>
+    </div>
 
-        </div>
-
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.min.mjs" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.worker.min.mjs" type="module"></script>
+    <script src="/script.js"></script> 
 </body>
 </html>
