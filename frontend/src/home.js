@@ -46,14 +46,9 @@ async function loadpdf(file) {
     // A Promessa lida com a assincronicidade da leitura do arquivo
     const arrayBuffer = await new Promise((resolve, reject) => {
         // Quando a leitura termina, resolve a Promessa com o resultado
-        reader.onload = (event) => {
-            resolve(event.target.result);
-        };
+        reader.onload = (event) => resolve(event.target.result)
         // Em caso de erro
-        reader.onerror = (error) => {
-            reject(error);
-        };
-        
+        reader.onerror = (error) => reject(error); 
         // Inicia a leitura do arquivo no formato ArrayBuffer (dados binários)
         reader.readAsArrayBuffer(file);
     });
@@ -76,6 +71,7 @@ async function loadpdf(file) {
             const page = await pdf.getPage(i);
             const content = await page.getTextContent();
             
+            console.log('content =>',content)
             // Junta os itens de texto com um espaço
             const text = content.items.map(item => item.str).join(' ');
             

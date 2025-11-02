@@ -1,27 +1,33 @@
-body{
-   background-color: rgb(205, 205, 209);
+body {
+    background-color: rgb(205, 205, 209);
 }
-#pdf-input{
+
+#pdf-input {
     display: none;
-     /* font-family: "Quicksand", sans-serif;
+    /* font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto; */
 }
-#label-input{
+
+#label-input {
     cursor: pointer;
     display: block;
     background-color: rgb(161, 69, 247);
     color: whitesmoke;
 }
-#reader-area{
+
+#reader-area {
     border: 2px solid #f36060;
     padding: 25px;
-    height: auto;
+    height:100vh;
     border-radius: 5px;
+    overflow-Y: scroll;
 }
-.navbar{
-  background-color:   rgb(161, 69, 247) !important;
+
+.navbar {
+    background-color: rgb(161, 69, 247) !important;
 
 }
+
 .nav-item a {
 
     color: white !important;
