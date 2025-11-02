@@ -1,5 +1,5 @@
 body{
-   
+   background-color: rgb(205, 205, 209);
 }
 #pdf-input{
     display: none;
@@ -17,4 +17,12 @@ body{
     padding: 25px;
     height: auto;
     border-radius: 5px;
+}
+.navbar{
+  background-color:   rgb(161, 69, 247) !important;
+
+}
+.nav-item a {
+
+    color: white !important;
 }
