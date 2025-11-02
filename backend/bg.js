@@ -79,9 +79,16 @@ async function loadpdf(file) {
         // 3. Exibindo o Resultado
         readerarea.innerText = fullText;
         readerarea.scrollTop = 0; // Vai para o topo do novo documento
+        
 
     } catch (error) {
         console.error("Erro ao processar PDF:", error);
         readerarea.innerText = "ERRO: Não foi possível ler o arquivo PDF. Verifique se o formato está correto.";
+    }
+    
+    try {
+        localStorage.setItem("savedPDFtext", fullText);
+    } catch (e) {
+        console.warn("AVISO: O PDF foi carregado, mas o salvamento falhou. Memória do navegador cheia.");
     }
 }
